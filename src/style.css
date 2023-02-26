@@ -1,3 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#three {
+  display: fixed;
+  left: 0;
+  top: 0;
+}
