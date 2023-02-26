@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import * as CANNON from 'cannon-es';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const words = ["Fast Learner", "Team Player", "Observant", "Motivated", "Curious", "Creative", "Reliable", "Problem\nSolver", "Adaptable", "Critical\nThinker"];
 const SPHERE_RADIUS = 100;
@@ -12,7 +12,7 @@ const scene = new THREE.Scene();
 const world = new CANNON.World();
 
 // Standard Sphere Mesh
-for (const word of words) {
+for (const _word of words) {
   const sphereGeometry = new THREE.SphereGeometry(SPHERE_RADIUS, 32, 32);
   const sphereMaterial = new THREE.MeshPhongMaterial();
   const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
